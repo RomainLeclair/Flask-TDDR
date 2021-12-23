@@ -28,7 +28,7 @@ USERNAME = "admin"
 PASSWORD = "admin"
 SECRET_KEY = "Roro"
 SQLALCHEMY_DATABASE_URI = os.getenv(
-    "DATABASE_URL", f"pstgres:///{Path(basedir).joinpath(DATABASE)}"
+    "DATABASE_URL", f"postgresql:///{Path(basedir).joinpath(DATABASE)}"
 )
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
